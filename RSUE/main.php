@@ -1,4 +1,3 @@
-<?php require "com/page.php" ?>
 <div class="container wrapper">
 <?php
 if($_COOKIE['user']!=''):
