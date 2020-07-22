@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!---------------Регистрация---------------------------------------------------->
 	<div align="center" class = "container mt-4">
 		<h1>Регистрация аккаунта</h1><br>
 		<form action="check.php" method="post">
@@ -30,6 +30,23 @@
 			type = "sumbit">регистрация</button>
 		</form>
 	</div>
+<!---------------Должность/post-------------------------------------------------->
+<div align="center" class = "container mt-4">
+		<form action = "check.php" method = "post" name = "form1">
+			<p><select name = "list1">
+				<option>Выберите должность из списка:</option>
+				<option>Зав.Кафедрой</option>
+				<option>Лаборант</option>
+				<option>Доцент</option>
+				<option>Преподаватель</option>
+				<option>Профессор</option>
+				<option>Ст.Лаборанта</option>
+				<option>Лаборант</option>
+				<option>Ассистент</option>
+			</select></p>
+		</form>
+</div>
+<!---------------------Вход------------------------------------------------------>
 	<div class = "col" align="center">
 	<h1>Войти в сервис</h1><br>
 		<form action="auth.php" method="post">
@@ -44,5 +61,6 @@
 			type = "sumbit">Войти</button>
 		</form>
 	</div>
+
 </body>
 </html>

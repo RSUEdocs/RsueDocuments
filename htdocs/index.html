@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -16,6 +16,18 @@
 			<input type= "text" class= "form-control" name = "login"
 			id = "login" placeholder="Введите логин:"><br>
 
+			<select name = "posts_name">
+				<option >Должности:</option>
+				<option value = "Зав.Кафедрой">Зав.Кафедрой</option>
+				<option value = "Лаборант">Лаборант</option>
+				<option value = "Доцент">Доцент</option>
+				<option value = "Преподаватель">Преподаватель</option>
+				<option value = "Профессор">Профессор</option>
+				<option value = "Ст.Лаборанта">Ст.Лаборанта</option>
+				<option value = "Ассистент">Ассистент</option>
+			</select>
+			<button type="submit" name = "submit">выбрать</button>	
+
 			<input type= "text" class= "form-control" name = "name"
 			id = "name" placeholder="Введите ваше имя:"><br>
 
@@ -29,6 +41,7 @@
 			type = "sumbit">регистрация</button>
 		</form>
 	</div>
+
 	<div class = "col" align="center">
 	<h1>Войти в сервис</h1><br>
 		<form action="auth.php" method="post">

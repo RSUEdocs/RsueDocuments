@@ -9,6 +9,15 @@ if (mb_strlen($login)<5 || mb_strlen($login)>90)
   echo "Недопустимая длина логина";
   exit;
   }
+  else if (isset($_POST['submit'])) 
+  {
+    $posts_name = $_POST['posts_name'];
+    $sql = $conn -> prepare("INSERT INTO `users`(`posts_name`) VALUES (:posts_name)");
+    $conn -> beginTransaction();
+    $sql -> execute(array(':posts_name'=> $posts_name));
+    $conn->commit();
+    exit; 
+  }
 else if (mb_strlen($name)<3 || mb_strlen($name)>50)
   {
   echo "Недопустимая длина имени";
